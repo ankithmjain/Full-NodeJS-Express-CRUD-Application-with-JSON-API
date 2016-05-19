@@ -1,0 +1,14 @@
+//
+   Created by ADMIN on 4/26/2016.
+.form-group
+    label(for="firstname") First Name
+    input#firstname.form-control(name="firstname", type="text", value=customer.firstname,placeholder='Enter First Name',required)
+.form-group
+    label(for="lastname") Last Name
+    input#lastname.form-control(name="lastname", type="text", value=customer.lastname,placeholder='Enter Last Name',required)
+.form-group
+    label(for="email") Email
+    input#email.form-control(name="email", type="email", value=customer.email,placeholder='Enter Email',required)
+.form-group
+    label(for="phone") Phone
+    input#phone.form-control(name="phone", type="number",min="0", value=customer.phone,placeholder='Enter Phone',required)

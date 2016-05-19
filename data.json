@@ -1,0 +1,6 @@
+[{"id":1,"prod_name":"Elegant Finger Ring ","prod_sku":"RS101","prod_type":"GOLD","prod_price":"122","prod_color":"Golden Pink"},
+  {"id":2,"prod_name":"Mens Chain","prod_sku":"CH101","prod_type":"SILVER","prod_price":"100","prod_color":"Silver"},
+  {"id":3,"prod_name":"Girls Nose Pin","prod_sku":"NH122","prod_type":"DIAMOND","prod_price":"210","prod_color":"Golden Yellow"},
+  {"id":4,"prod_name":"Katariya Special Wedding Ring","prod_sku":"RS1965","prod_type":"PLATINUM","prod_price":"150","prod_color":"White"},
+  {"id":5,"prod_name":"Wedding Bands","prod_sku":"RS65","prod_type":"PLATINUM","prod_price":"200","prod_color":"White"},
+  {"id":6,"prod_name":"Diamond Watch For Girls UPDATE","prod_sku":"DIA234","prod_type":"Watch","prod_price":"250","prod_color":"Silver"}]

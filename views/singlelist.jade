@@ -1,0 +1,24 @@
+extend layout
+
+block content
+  h1 Single Product View
+  p  Individual Product Details.
+  p
+    a#add.btn.btn-primary(href="/products/") Back
+  table.table
+    thead
+      tr
+        th Product ID
+        th Product Name
+        th Product SKU/Barcode
+        th Product Type
+        th Price
+        th Product Color
+    tbody
+          tr
+            td #{product.id}
+            td #{product.prod_name}
+            td #{product.prod_sku}
+            td #{product.prod_type}
+            td #{product.prod_price}
+            td #{product.prod_color}

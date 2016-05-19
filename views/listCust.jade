@@ -1,0 +1,42 @@
+//
+   Created by ADMIN on 4/27/2016.
+
+extend layout
+
+block content
+    a#home.btn.btn-primary(href="/") Home
+    h1 Customers CRUD Module
+
+    p
+        a#add.btn.btn-primary(href="/customers/add",style='margin-right: 10px;') Create New Customer
+
+        a#delete2.btn.btn-primary(hrer="#") Delete
+
+    h3 List of Customers
+    table.table
+        thead
+            tr
+                th
+                th Customer ID
+                th First Name
+                th Last Name
+                th Email
+                th Phone
+                th Update
+        tbody
+            if !customers.length
+                tr
+                    td(colspan=4) You should add a customer
+            else
+                each customer in customers
+                    tr
+                        td
+                            input(type="checkbox", id=customer.id)
+                        td #{customer.id}
+                        td #{customer.firstname}
+                        td #{customer.lastname}
+                        td
+                            a(href="mailto:#{customer.email}") #{customer.email}
+                        td #{customer.phone}
+                        td
+                            a#edit.btn.btn-primary(href="/customers/#{customer.id}") Update

@@ -1,0 +1,17 @@
+//
+   Created by ADMIN on 4/26/2016.
+.form-group
+    label(for="prod_name") Product name
+    input#prod_name.form-control(name="prod_name", type="text", value=product.prod_name,placeholder='Enter Product Name',required)
+.form-group
+    label(for="prod_sku") Product SKU
+    input#prod_sku.form-control(name="prod_sku", type="text", value=product.prod_sku,placeholder='Enter Product SKU',required)
+.form-group
+    label(for="prod_type") Product Type
+    input#prod_type.form-control(name="prod_type", type="text", value=product.prod_type,placeholder='Enter Product Type',required)
+.form-group
+    label(for="prod_price") Product Price
+    input#prod_price.form-control(name="prod_price", type="number", min="0",value=product.prod_price,placeholder='Enter Product Price',required)
+.form-group
+    label(for="prod_color") Product Color
+    input#prod_color.form-control(name="prod_color", type="text", value=product.prod_color,placeholder='Enter Product Color',required)

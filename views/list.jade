@@ -1,0 +1,39 @@
+extend layout
+
+block content
+  a#home.btn.btn-primary(href="/") Home
+  h1 Products CRUD Module
+
+  p
+    a#add.btn.btn-primary(href="/products/add",style='margin-right: 10px;') Create New Product
+
+    a#delete.btn.btn-primary(hrer="#") Delete
+
+  h3 List of Products
+  table.table
+    thead
+      tr
+        th
+        th Product ID
+        th Product Name
+        th Product SKU/Barcode
+        th Product Type
+        th Price($)
+        th Click Below to Update
+    tbody
+      if !products.length
+        tr
+          td(colspan=4) add a product data
+      else
+        each product in products
+          tr
+            td
+              input(type="checkbox", id=product.id)
+            td #{product.id}
+            td #{product.prod_name}
+            td #{product.prod_sku}
+            td #{product.prod_type}
+            td #{product.prod_price}
+            td
+               a#edit.btn.btn-primary(href="/products/#{product.id}") Update
+
